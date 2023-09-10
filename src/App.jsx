@@ -1,7 +1,11 @@
 import logo from "./assets/zapay-logo.png"
 import globeIcon from "./assets/globe-icon.svg"
-import smilingMan from "./assets/smiling-man-with-phone.png"
+// import smilingMan from "./assets/smiling-man-with-phone.png"
 import playIcon from "./assets/play-icon.svg"
+import manImg1 from "./assets/man-1.png"
+import manImg2 from "./assets/man-2.png"
+import girlImg1 from "./assets/girl-1.png"
+import girlImg2 from "./assets/girl-2.png"
 import './App.css'
 
 function App() {
@@ -38,8 +42,8 @@ function App() {
         <section className="py-5 bg-bgWhite"> 
           <div className="container mx-auto px-3">
             <div className="flex gap-6">
-              <div className="flex flex-col justify-between items-center w-[40%] pt-20">
-                <div className="text-[#202626]">
+              <div className="flex flex-col justify-between items-center w-[40%] pt-10 pb-5">
+                <div className="text-[#202626] mb-10">
                     <h1 className="font-semibold leading-[1] text-6xl mb-4
                     ">Better Money solution for your everyday needs</h1>
                     <p className="text-lg mb-4">Seamless Life changing Financial solutions for traders and business owners across the middle-east</p>
@@ -48,9 +52,29 @@ function App() {
                       <a className="flex items-center text-[#202626] font-medium bg-[#F9E6D2] py-2 px-4 rounded-md cursor-pointer hover:shadow-md"><img className="mr-1" src={playIcon} alt="" />How it works</a>
                     </div>
                 </div>
+                <div className="w-full">
+                  <div className="flex items-center">
+                    <div className="w-12 h-12 flex overflow-hidden bg-[#804FBF] border-2 border-zapayGreen rounded-full -ml-2">
+                      <img src={manImg1} alt="" />
+                    </div>
+                    <div className="w-12 h-12 flex overflow-hidden bg-[#EFC169] border-zapayGreen rounded-full -ml-2">
+                      <img src={girlImg1} alt="" />
+                    </div>
+                    <div className="w-12 h-12 flex overflow-hidden bg-[#56BDDD] border-2 border-zapayGreen rounded-full -ml-2">
+                      <img src={manImg2} alt="" />
+                    </div>
+                    <div className="w-12 h-12 flex overflow-hidden bg-[#FFCAD4] border-2 border-zapayGreen rounded-full -ml-2">
+                      <img src={girlImg2} alt="" />
+                    </div>
+                    <div className="w-12 h-12 flex justify-center items-center overflow-hidden bg-[#F9E5D2] border-2 border-zapayGreen rounded-full -ml-2">
+                      <span className="text-zapayGreen text-lg font-semibold">+5M</span>
+                    </div>
+                  </div>
+                  <p className="text-[#C7C0BB]">registered merchants globally</p>
+                </div>
               </div>
               <div className="w-[60%]">
-                <img src={smilingMan} alt="" />
+                {/* <img src={smilingMan} alt="" /> */}
               </div>
         
             </div>
