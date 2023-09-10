@@ -6,6 +6,9 @@ import manImg1 from "./assets/man-1.png"
 import manImg2 from "./assets/man-2.png"
 import girlImg1 from "./assets/girl-1.png"
 import girlImg2 from "./assets/girl-2.png"
+import applePayLogo from "./assets/applePay-logo.svg"
+import paykasaLogo from "./assets/paykasa-logo.svg"
+import bankMusactLogo from "./assets/bankMuscat-logo.svg"
 import './App.css'
 
 function App() {
@@ -80,6 +83,15 @@ function App() {
             </div>
           </div>
         </section>
+        <div className="container mx-auto px-3 mt-5">
+          <div className="flex justify-around items-center p-7" style={{background: 'linear-gradient(90deg, rgba(232, 230, 224, 0.00) -3.95%, #E8E6E0 49.03%, rgba(232, 230, 224, 0.00) 99.95%)'}}>
+            <p className="font-medium max-w-[150px]">We are trusted by reliable partners</p>
+            <img src={applePayLogo} alt="" />
+            <img src={paykasaLogo} alt="" />
+            <img src={bankMusactLogo} alt="" />
+          </div>
+          
+        </div>
       </main>
     </>
   )
