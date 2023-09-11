@@ -24,7 +24,7 @@ function App() {
             <a href="#" className="mr-8">
               <img src={logo} alt="Zapay Logo" />
             </a>
-            <ul className="flex items-center space-x-2">
+            <ul className="hidden md:flex items-center space-x-2">
               <li className="pt-2 font-medium"><a href="#">Home</a></li>
               <li className="pt-2 font-medium"><a href="#">Products</a></li>
               <li className="pt-2 font-medium"><a href="#">Support</a></li>
@@ -40,25 +40,25 @@ function App() {
               </select>
             </div>
               <button className="font-medium">Login</button>
-              <button className="text-bgWhite font-medium bg-zapayGreen py-2 px-4 hover:shadow-md" style={{borderRadius: "0.25rem 1rem 0.25rem 0.25rem"}}>Get Started</button>
+              <button className="text-bgWhite font-medium bg-zapayGreen p-3 md:py-2 md:px-4 hover:shadow-md" style={{borderRadius: "0.25rem 1rem 0.25rem 0.25rem"}}>Get Started</button>
             </div>
         </nav>
       </header>
       <main>
         <section className="py-5 bg-bgWhite"> 
           <div className="container mx-auto px-3">
-            <div className="flex gap-12">
-              <div className="flex flex-col justify-between items-center w-[40%] pt-10 pb-5">
-                <div className="text-[#202626] mb-10">
-                    <h1 className="font-semibold leading-[1] text-6xl mb-4
+            <div className="flex flex-col gap-12 md:flex-row">
+              <div className="flex flex-col justify-between items-center w-full md:w-[40%] pt-10 pb-5">
+                <div className="text-[#202626] mb-10 text-center md:text-left">
+                    <h1 className="font-semibold leading-[1] text-5xl md:text-6xl mb-4
                     ">Better Money solution for your everyday needs</h1>
                     <p className="text-lg mb-4">Seamless Life changing Financial solutions for traders and business owners across the middle-east</p>
-                    <div className="flex justify-start items-center space-x-4">
+                    <div className="flex md:justify-start justify-center items-center space-x-4">
                       <a className="text-bgWhite font-medium bg-zapayGreen py-2 px-4 rounded-md cursor-pointer hover:shadow-md hover:scale-95">Get Started</a>
                       <a className="flex items-center text-[#202626] font-medium bg-[#F9E6D2] py-2 px-4 rounded-md cursor-pointer hover:shadow-md"><img className="mr-1" src={playIcon} alt="" />How it works</a>
                     </div>
                 </div>
-                <div className="w-full">
+                <div className="w-auto md:w-full">
                   <div className="flex items-center">
                     <div className="w-12 h-12 flex overflow-hidden bg-[#804FBF] border-2 border-zapayGreen rounded-full -ml-2">
                       <img src={manImg1} alt="" />
@@ -79,7 +79,7 @@ function App() {
                   <p className="text-[#C7C0BB]">registered merchants globally</p>
                 </div>
               </div>
-                <div className="w-[60%] flex items-center relative pl-[3.2rem] translate-x-[20%] bg-[#E9E6E0] rounded-l-[5rem] before:absolute before:content-[''] before:top-0 before:left-4 before:bg-[url('/src/assets/hero-right-pattern.png')] before:w-full before:h-full before:-z-1">
+                <div className="w-full md:w-[60%] hidden md:flex  items-center relative pl-[3.2rem] translate-x-[20%] bg-[#E9E6E0] rounded-l-[5rem] before:absolute before:content-[''] before:top-0 before:left-4 before:bg-[url('/src/assets/hero-right-pattern.png')] before:w-full before:h-full before:-z-1">
                   <img className="h-[400px] z-10 flex self-end" src={smilingMan} alt="Man using Zapay" />
                   <div className="p-2 flex justify-center items-center absolute bottom-[22%] right-[52%] rounded-lg gap-2 z-20 backdrop-blur-sm" style={{background: 'linear-gradient(99deg, rgba(250, 253, 253, 0.45) 27.81%, rgba(250, 253, 253, 0.40) 88.68%)', boxShadow: '4px 4px 4px 0px rgba(0, 0, 0, 0.10)'}}>
                     <img className="w-10 h-10" src={graphImg} alt="" />
@@ -108,8 +108,8 @@ function App() {
             </div>
           </div>
         </section>
-        <div className="container mx-auto px-3 mt-5">
-          <div className="flex justify-around items-center p-7" style={{background: 'linear-gradient(90deg, rgba(232, 230, 224, 0.00) -3.95%, #E8E6E0 49.03%, rgba(232, 230, 224, 0.00) 99.95%)'}}>
+        <div className="container mx-auto px-3 mt-5 md:mb-5 space-x-5">
+          <div className="flex flex-col md:flex-row justify-around items-center p-7" style={{background: 'linear-gradient(90deg, rgba(232, 230, 224, 0.00) -3.95%, #E8E6E0 49.03%, rgba(232, 230, 224, 0.00) 99.95%)'}}>
             <p className="font-medium max-w-[150px]">We are trusted by reliable partners</p>
             <img src={applePayLogo} alt="" />
             <img src={paykasaLogo} alt="" />
