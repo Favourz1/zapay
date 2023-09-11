@@ -25,11 +25,11 @@ html{
 }
 
 *{
-  transition: 0.5s ease-in-out;
-  -webkit-transition: 0.5s ease-in-out;
-  -moz-transition: 0.5s ease-in-out;
-  -ms-transition: 0.5s ease-in-out;
-  -o-transition: 0.5s ease-in-out;
+  transition: 0.3s ease-in-out;
+  -webkit-transition: 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out;
+  -ms-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
 }
 
 
@@ -37,6 +37,8 @@ body {
   margin: 0;
   padding: 0;
   background-color: #FBF6F2;
+  overflow-x: hidden;
+  overflow-y:scroll;
 }
 
 

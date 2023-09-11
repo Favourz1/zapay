@@ -1,6 +1,6 @@
 import logo from "./assets/zapay-logo.png"
 import globeIcon from "./assets/globe-icon.svg"
-// import smilingMan from "./assets/smiling-man-with-phone.png"
+import smilingMan from "./assets/smiling-man-with-phone.png"
 import playIcon from "./assets/play-icon.svg"
 import manImg1 from "./assets/man-1.png"
 import manImg2 from "./assets/man-2.png"
@@ -9,6 +9,9 @@ import girlImg2 from "./assets/girl-2.png"
 import applePayLogo from "./assets/applePay-logo.svg"
 import paykasaLogo from "./assets/paykasa-logo.svg"
 import bankMusactLogo from "./assets/bankMuscat-logo.svg"
+import moneyImg from "./assets/money.png"
+import graphImg from "./assets/graph.png"
+import cartIcon from "./assets/cart.svg"
 import './App.css'
 
 function App() {
@@ -44,14 +47,14 @@ function App() {
       <main>
         <section className="py-5 bg-bgWhite"> 
           <div className="container mx-auto px-3">
-            <div className="flex gap-6">
+            <div className="flex gap-12">
               <div className="flex flex-col justify-between items-center w-[40%] pt-10 pb-5">
                 <div className="text-[#202626] mb-10">
                     <h1 className="font-semibold leading-[1] text-6xl mb-4
                     ">Better Money solution for your everyday needs</h1>
                     <p className="text-lg mb-4">Seamless Life changing Financial solutions for traders and business owners across the middle-east</p>
                     <div className="flex justify-start items-center space-x-4">
-                      <a className="text-bgWhite font-medium bg-zapayGreen py-2 px-4 rounded-md cursor-pointer hover:shadow-md">Get Started</a>
+                      <a className="text-bgWhite font-medium bg-zapayGreen py-2 px-4 rounded-md cursor-pointer hover:shadow-md hover:scale-95">Get Started</a>
                       <a className="flex items-center text-[#202626] font-medium bg-[#F9E6D2] py-2 px-4 rounded-md cursor-pointer hover:shadow-md"><img className="mr-1" src={playIcon} alt="" />How it works</a>
                     </div>
                 </div>
@@ -76,10 +79,32 @@ function App() {
                   <p className="text-[#C7C0BB]">registered merchants globally</p>
                 </div>
               </div>
-              <div className="w-[60%]">
-                {/* <img src={smilingMan} alt="" /> */}
-              </div>
-        
+                <div className="w-[60%] flex items-center relative pl-[3.2rem] translate-x-[20%] bg-[#E9E6E0] rounded-l-[5rem] before:absolute before:content-[''] before:top-0 before:left-4 before:bg-[url('/src/assets/hero-right-pattern.png')] before:w-full before:h-full before:-z-1">
+                  <img className="h-[400px] z-10 flex self-end" src={smilingMan} alt="Man using Zapay" />
+                  <div className="p-2 flex justify-center items-center absolute bottom-[22%] right-[52%] rounded-lg gap-2 z-20 backdrop-blur-sm" style={{background: 'linear-gradient(99deg, rgba(250, 253, 253, 0.45) 27.81%, rgba(250, 253, 253, 0.40) 88.68%)', boxShadow: '4px 4px 4px 0px rgba(0, 0, 0, 0.10)'}}>
+                    <img className="w-10 h-10" src={graphImg} alt="" />
+                    <div className="">
+                      <p className="text-md font-semibold">$17,000</p>
+                      <p className="text-xs font-medium">Total Earnings</p>
+                    </div>
+                  </div>
+                  <div className="p-2 absolute bottom-[5%] left-[10%] rounded-lg gap-2 z-20 backdrop-blur-sm" style={{background: 'linear-gradient(99deg, rgba(250, 253, 253, 0.45) 27.81%, rgba(250, 253, 253, 0.40) 88.68%)', boxShadow: '4px 4px 4px 0px rgba(0, 0, 0, 0.10)'}}>
+                      <div className="flex justify-center items-center gap-2">
+                          <div className="p-1 bg-white rounded-md">
+                            <img className="w-4 h-4" src={cartIcon} alt="" /> 
+                          </div>
+                          <p className="text-xs font-semibold">Point of sale</p>
+                      </div>
+                      <div className="">
+                        <p className="font-semibold">$23,184 <span className="font-normal">USD</span> </p>
+                        <p className="text-gray-500 text-[10px]">+26.71% increase</p>
+                      </div>
+                  </div>
+                  <div className="p-3 flex justify-center items-center absolute bottom-[30%] left-[-80px] rounded-lg gap-2 z-20 backdrop-blur-sm bg-[rgba(250, 253, 253, 0.60)]" style={{boxShadow: '4px 4px 4px 0px rgba(0, 0, 0, 0.10)'}}>
+                    <img className="w-5 h-5" src={moneyImg} alt="" />
+                      <p className="text-xs font-semibold">Receive Payments Globally</p>
+                  </div>
+                </div>     
             </div>
           </div>
         </section>
