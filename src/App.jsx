@@ -18,16 +18,33 @@ import { useEffect } from "react"
 
 function App() {
   useEffect(() => {
-  });
+    // const imageUrls =[]
+    // const imagePromises = imageUrls.map((url) => {
+    //   return new Promise((resolve, reject) => {
+    //     const img = new Image();
+    //     img.src = url;
+    //     img.onload = resolve;
+    //     img.onerror = reject;
+    //   });
+    // });
+
+    // Promise.all(imagePromises)
+    //   .then(() => {
+    //     setImagesLoaded(true);
+    //   })
+    //   .catch((error) => {
+    //     console.error('Error preloading images:', error);
+    //   });
+  }, []);
 
   return (
     <>
-      <div className="fixed top-0 left-0 w-full min-h-[100vh] z-[10000] flex justify-center items-center animate-[hide_1s_0.8s_ease-in-out_forwards]">
+      <div className="fixed hidden top-0 left-0 w-full min-h-[100vh] z-[10000] md:flex justify-center items-center animate-[hide_1s_1.2s_ease-in-out_forwards]">
         <div className="w-1/2 bg-zapayGreen h-[100vh] animate-[slideDown_1s_ease-in-out_forwards]"></div>
         <div className="w-1/2 bg-zapayGreen  h-[100vh] animate-[slideUp_1s_ease-in-out_forwards]"></div>
-        <img className="absolute animate-[hide_1s_0.4s_ease-in-out_forwards]" src={logoWhite} alt="" />
+        <img className="absolute hidden md:flex animate-[hide_0.5s_0.4s_ease-in-out_forwards]" src={logoWhite} alt="Zapay Logo" />
       </div>
-      <header className="py-5 bg-bgWhite translate-y-[-100%] animate-[slideDown_0.5s_1.1s_ease_forwards]" style={{animationTimingFunction: 'cubic-bezier(0.250, 0.460, 0.450, 0.940)'}}>
+      <header className="py-2 md:py-5 bg-bgWhite translate-y-[-100%] animate-[slideDown_0.5s_1.1s_ease_forwards]" style={{animationTimingFunction: 'cubic-bezier(0.250, 0.460, 0.450, 0.940)'}}>
         <nav className="container mx-auto flex justify-between items-center px-3">
           <div className="flex items-center">
             <a href="#" className="mr-8">
